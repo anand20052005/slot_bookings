@@ -18,6 +18,7 @@ router.get("/", getBookings);
 // Cancel Booking
 router.delete("/:id", cancelBooking);
 
+
 // Update Booking Status
 router.patch("/:id", updateBookingStatus);
 
