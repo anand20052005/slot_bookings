@@ -17,7 +17,7 @@ function Bookings() {
     try {
 
       const response = await axios.get(
-        "http://localhost:8000/api/bookings"
+        "https://slot-bookings.onrender.com/api/bookings"
       );
 
       setBookings(response.data);
@@ -54,7 +54,7 @@ function Bookings() {
     try {
 
       const response = await axios.post(
-        "http://localhost:8000/api/bookings",
+        "https://slot-bookings.onrender.com/api/bookings",
         formData
       );
 
@@ -87,7 +87,7 @@ function Bookings() {
     try {
 
       await axios.delete(
-        `http://localhost:8000/api/bookings/${id}`
+        `https://slot-bookings.onrender.com/api/bookings/${id}`
       );
 
       alert("Booking Cancelled");

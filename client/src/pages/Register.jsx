@@ -25,7 +25,7 @@ function Register() {
     try {
 
       const response = await axios.post(
-        "http://localhost:8000/api/auth/register",
+        "https://slot-bookings.onrender.com/api/auth/register",
         formData
       );
 
